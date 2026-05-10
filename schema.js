@@ -19,6 +19,7 @@ module.exports.listingSchema = Joi.object({
        "number.base": "Price must be a number",
        "number.positive": "Price must be greater than zero",
        "any.required": "Price is required",
+      
      }),
      image: Joi.string().uri().allow("", null).messages({
        "string.uri": "Image must be a valid URL",
